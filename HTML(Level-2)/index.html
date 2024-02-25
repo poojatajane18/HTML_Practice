@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+        <center><h2>Exam Registration Form</h2></center>
+    <hr><br>
+    <div class="form">
+    <form action="" method="get">
+        <!-- Register as -->
+        <label for="reg">Register as</label>
+        <select name="register" id="reg">
+            <option value="Seller">BE</option>
+            <option value="Buyer">MBA</option>
+            <option value="Buyer">BSC</option>
+            <option value="Buyer">IT</option>
+            <option value="Buyer">DIPLOMA</option>
+        </select>
+        <br><br>
+        <!-- firstname -->
+        <label  for="fname"> First name:</label>
+        <input type="text" name="fname" id="fname" required placeholder="Enter your first name"> <br><br>
+        <!-- lastname -->
+        <label for="lname"> Last name:</label>
+        <input type="text" name="lname" id="lname" required placeholder="Enter your last name">
+        <br><br>
+        <!-- gender -->
+        <label for="">Gender:</label><br>
+        <input class="f" type="radio" name="gender" id="">Male <br>
+        <input class="f" type="radio" name="gender" id="">Female <br>
+        <input class="f" type="radio" name="gender" id="">Other
+        <br><br>
+        <!-- email -->
+        <label for="mail">Email:</label>
+        <input type="email" name="email" id="mail" required placeholder="abc@gmail.com">
+        <br><br>
+        <!-- phone number -->
+        <label for="phone"> Mobile Number:</label>
+        <input type="tel" name="phone" id="phone" required placeholder="Enter your mobile number">
+        <br><br>
+        <!-- set password -->
+        <label for="spass"> Set Password:</label>
+        <input type="password" name="setpassword" id="spass" required placeholder="Set your password">
+        <br><br>
+        <!-- confirm password -->
+        <label for="cpass"> Confirm Password:</label>
+        <input type="password" name="confirmpassword" id="cpass" required placeholder="Confirm password">
+        <br><br>
+        <input type="checkbox" required>I accept your terms and conditions.
+        <br><br>
+        <!-- register or reset -->
+        <input type="submit" name="submit" id="submit">
+        <input type="reset" name="reset" id="reset">
+        <br>
+        
+    </form></div>
+    <p style="margin-left: 50px;">Already registerd?<a href="" target="_blank">click here to login</a></p>
+</body>
+
+</html>

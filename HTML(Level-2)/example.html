@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Program</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    #foodList {
+        list-style-type: none;
+        padding: 0;
+    }
+    #foodList li {
+        margin-bottom: 5px;
+    }
+</style>
+</head>
+<body>
+<h2>Food Program</h2>
+<input type="text" id="foodInput" placeholder="Enter your favorite food">
+<button onclick="addFood()">Add Food</button>
+<button onclick="removeFood()">Remove Food</button>
+<ul id="foodList"></ul>
+ 
+<script>
+    function addFood() {
+        var input = document.getElementById("foodInput");
+        var food = input.value.trim();
+       
+        if (food !== "") {
+            var foodList = document.getElementById("foodList");
+            var listItem = document.createElement("li");
+            listItem.textContent = food;
+            foodList.appendChild(listItem);
+            input.value = ""; // Clear input field after adding food
+        } else {
+            alert("Please enter a valid food");
+        }
+        
+    }
+    function removeFood() {
+        var foodList = document.getElementById("foodList");
+        var selectedItems = foodList.querySelectorAll("li.selected");
+        
+        for (var i = 0; i < selectedItems.length; i++) {
+            foodList.removeChild(selectedItems[i]);
+        }
+    }
+
+    function removeSelectedItem(event) {
+        var target = event.target;
+        
+        if (target.tagName === "LI") {
+            target.classList.toggle("selected");
+        }
+    }
+    
+   
+ 
+     // Call the function to attach click event listeners to existing items
+</script>
+</body>
+</html>
+ 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Label Attribute</title>
+</head>
+<body>
+    <form>
+        <!--
+            <label>//simple way
+                Enter your name : 
+                <input type="text" placeholder="username">
+            </label>
+        -->
+        <div>
+            <!--Label Classical approach : giving for & id value same for connection-->
+            <label for="username"> Username : </label>
+            <input type="text" placeholder="Enter username" id="username">
+        </div>
+        <div>
+            <label for="password">Password : </label>
+            <input type="password" placeholder="Enter Password" id="password">
+        </div>
+        <div>
+            <label for="age">Age : </label>
+            <input type="number" placeholder="Enter age" id="age">
+        </div>
+    </form>
+</body>
+</html>

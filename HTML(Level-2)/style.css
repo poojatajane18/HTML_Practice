@@ -1,0 +1,17 @@
+html{
+    background-color: darkgray;
+}
+body{
+    font-size: 18px;
+    background-color: rgb(171, 232, 243);
+    width: 600px;
+    border: 2px solid black;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+.form{
+    margin-left: 50px;
+}
+.f{
+    margin-left: 60px;
+}
